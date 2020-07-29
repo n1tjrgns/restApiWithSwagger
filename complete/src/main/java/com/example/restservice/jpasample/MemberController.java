@@ -16,7 +16,7 @@ public class MemberController {
     private final MemberService memberService;
     private final MemberRepository memberRepository;
 
-    @GetMapping("/api")
+    @GetMapping("/hateoas")
     public EntityModel<Member> insertMember(@RequestParam(value = "name") String name, @RequestParam(value = "age") Integer age, Grade grade){
 
         Member member = memberService.addMember(name, age, grade);

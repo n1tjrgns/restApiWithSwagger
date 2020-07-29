@@ -2,10 +2,8 @@ package com.example.restservice.jpasample;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Data;
 import org.springframework.hateoas.RepresentationModel;
 
-@Data
 public class MemberHateoas extends RepresentationModel<MemberHateoas>{
 
     private final String name;

@@ -17,13 +17,13 @@ public class MemberService {
 
         if(findMember == null){
 
-           Member member = Member.builder()
+            Member member = Member.builder()
                     .name(name)
                     .age(age)
                     .grade(grade.GOLD)
                     .build();
 
-           return memberRepository.save(member);
+            return memberRepository.save(member);
         }
 
         return findMember;
