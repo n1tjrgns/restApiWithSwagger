@@ -7,8 +7,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public enum Grade {
 
-    GOLD("GOLD", "골드"),
-    BRONZE("BRONZE", "브론즈");
+    GOLD("GOLD", "Gold"),
+    BRONZE("BRONZE", "Bronze");
 
     private final String key;
     private final String title;
